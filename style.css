@@ -1,8 +1,17 @@
+:root {
+    --bg-color: #F9FAFB;
+}
+
 body {
     display: flex;
     width: 100vw;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.italic {
+    font-style: italic;
 }
 
 .splash {
@@ -65,7 +74,13 @@ body {
     height: calc(100% / 3);
     justify-content: flex-end;
     padding: 30px;
-    background-color: grey;
+    background-color: var(--bg-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.heroTextTwo {
+    margin-top: 30px;
 }
 
 .middle {
@@ -73,24 +88,33 @@ body {
     flex-direction: column;
     height: calc(100% / 3);
     padding: 30px;
+    z-index: 1;
+    box-shadow: 4px 5px 18px 0px grey;
 }
 
 .bottom {
     display: flex;
     flex-direction: column;
     height: calc(100% / 3);
-    background: grey;
+    background-color: var(--bg-color);
     padding: 30px;
 }
 
 .create {
     background-color: #596D48;
     color: white;
-    border-radius: 6px;
+    border-radius: 8px;
     width: 200px;
     height: 50px;
     border: none;
-    box-shadow: 5px 5px 10px black;
+    box-shadow: 4px 4px 13px 2px grey;
+    font-weight: 700;
+    font-size: 1rem;
+
+}
+
+.create:hover {
+    cursor: pointer;
 }
 
 form {
@@ -99,4 +123,15 @@ form {
     flex-direction: column;
     flex: 1;
 
+}
+
+#existingAccount > a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 700;
+    font-size: large;
+}
+
+#existingAccount {
+    margin-top: 30px;
 }
