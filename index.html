@@ -8,7 +8,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="splash"></div>
+    <div class="splash">
+      <div class="odin">
+        <div class="odinBackground"></div>
+        <div class="odinText">
+          <img src="./src/odin-lined.png" alt="Odin logo" id="odin" />
+          <div class="odinLogoText">ODIN</div>
+        </div>
+      </div>
+    </div>
     <div class="main">
       <div class="top">
         <div class="heroText">
@@ -18,7 +26,29 @@
         </div>
         <div class="heroTextTwo">You know you want to.</div>
       </div>
-      <div class="middle"></div>
+      <div class="middle">
+        <h2>Lets do this!</h2>
+        <form action="*" method="post">
+          <div>
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" />
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone" />
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+            <label for="confirm">Confirm Password</label>
+            <input type="password" name="confirm" id="confirm" />
+          </div>
+        </form>
+      </div>
       <div class="bottom">
         <button class="create">Create Account</button>
       </div>
