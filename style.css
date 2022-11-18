@@ -2,6 +2,10 @@
     --bg-color: #F9FAFB;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     width: 100vw;
@@ -29,7 +33,7 @@ body {
     width: 100%;
     height: 150px;
     align-items: center;
-    margin-top: 35%;
+    top: 21.5%;
     justify-content: center;
     position: relative;
 }
@@ -86,11 +90,47 @@ body {
 .middle {
     display: flex;
     flex-direction: column;
-    height: calc(100% / 3);
+    height: max(35%, 150px);
     padding: 30px;
     z-index: 1;
     box-shadow: 4px 5px 18px 0px grey;
 }
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  
+}
+
+.formRow {
+    display: flex;
+    gap: 50px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.field > label {
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: .8rem;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    height: 25px;
+}
+
+.focus:focus {
+    outline: 1px solid blue;
+    box-shadow: 3px 3px 6px 0px grey;
+}
+
 
 .bottom {
     display: flex;
@@ -115,14 +155,6 @@ body {
 
 .create:hover {
     cursor: pointer;
-}
-
-form {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    flex: 1;
-
 }
 
 #existingAccount > a {
